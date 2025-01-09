@@ -1,8 +1,8 @@
-# **Data Tracking with DVC in GitHub Codespaces**
+# **Assignment 4 - Data versioning with DVC**
 
-Assignment 4 on how to track  data using **DVC** and push these files to a remote storage (Virtual Machine ).
+To track data using **DVC** and store it in a remote storage (Virtual Machine).
 
- Participants will learn to version datasets, ensuring reproducibility in a collaborative setting.
+In this task you will version the dataset to ensure reproducibility.
 
 ---
 
@@ -12,48 +12,32 @@ Assignment 4 on how to track  data using **DVC** and push these files to a remot
 
 
 
-###  **1.Log in to your VM**
+###  **1. Log in to your VM and create a new directory to act as remote storage**
 
- Log in to your VM with the credentials shared with you. Create a new directory inside it. This will act like a remote
- storage to push the data being version controlled by DVC.
+### **2. Create a python virtual environment, and activate it**
 
-### **2.Create a python virtual environment, and activate it**
-
- - Run below commandtocreate a virtual environment
-
-                           python-m venv venv
-
- (Format is : python-m venv <name>)
-
- - Run below commandtoactivate the virtual environment
+### **3. Install DVC and Initialize a DVC repository**
  
-                             source venv/bin/activate
-
-### **3. Initialize DVC**
- 
- -Run the below command to install dvc
- 
- pip install dvc==3.55.2 dvc-ssh==4.1.1 asyncssh==2.18.0
-
-### **4. Add Remote Storage**
-- Configure Remote Storage (Directory present on VM)
+### **4. Configure Remote Storage (Directory present on VM)**
 
 
-### **5. Track Data_Main**
-- Add your main data (the starting dataset) to DVC.
-- Commit the changes to Git and DVC.
-- Push the data to your remote VM storage and tag it as V1.
+### **5. Track the main data using DVC**
+- Track the main data(data/data_main.csv) using DVC.
+- Tag it as v1.
 
-### **6.Add Monthly Data (month1, month2) Progressively**
-- update the main data by running the Data_Aggregator.py file
-- Note: by default Data_Aggregator.py will add Month2 data to main data, to add Month3 data, change the path of dataset2 in in the Data_Aggregator.py file.
-- After running the file to add the monthly data (e.g., month1 and month2), track and push these changes using DVC.
-_ tag them as v2 and v3 respecctively.
+
+### **6.Add Monthly Data (month1_data.csv, month2_data.csv) Progressively**
+- Update the main data by running the `data_aggregator.py` file.
+
+- Note: By default `data_aggregator.py` will add month2_data.csv to main data. To add month3_data.csv, change the path of dataset2 in in the `data_aggregator.py` file.
+
+- After running the file to add the monthly data (e.g., month2_data.csv and month3_data.csv), track and push these changes using DVC. Tag them as v2 and v3 respectively.
+
 
 ### 6. Upload Screenshots
 - Take screenshots of each command and its output to show how the data is tracked, added, and pushed to remote storage.
-- create a folder "Screenshots" and upload the screenshots in it.
+- Create a folder "Screenshots" and upload the screenshots in it.
 
 ## Notes
-- link for the dataset used in this assignment : https://archive.ics.uci.edu/dataset/222/bank+marketing
+- To know more about the data used in this assignment: https://archive.ics.uci.edu/dataset/222/bank+marketing
 - Use dvc status to check the tracking status of your files.
