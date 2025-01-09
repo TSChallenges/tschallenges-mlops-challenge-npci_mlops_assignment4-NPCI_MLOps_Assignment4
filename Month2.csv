@@ -1,3 +1,4 @@
+age,job,marital,education,balance,default,housing,loan,contact,day,month,duration,campaign,pdays,previous,poutcome,y
 46,services,married,primary,1210,no,no,yes,unknown,22,oct,205,2,-1,1,unknown,no
 47,admin,single,secondary,1220,no,yes,no,cellular,23,nov,210,3,-1,0,unknown,no
 48,management,divorced,tertiary,1230,no,no,no,unknown,24,dec,215,4,-1,1,unknown,no
